@@ -3,7 +3,7 @@ from streamlit_chat import message
 import google.generativeai as palm
 
 # add a title to the app
-st.title("Doreen Ninsima")
+st.title("Doreen Alchemist")
 
 '''
 She knows math and can answer pretty well on all kinds of questions ranging from the most complex Biological concepts to explaining the theory of quantuum super-positioning to a 5-year old. Please enjoy a conversation with her.
