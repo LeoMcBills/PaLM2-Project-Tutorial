@@ -45,3 +45,9 @@ if user_prompt and palm_api_key:
     st.session_state.messages.append(msg) # add message to the chat history
 
     message(msg["content"]) # display message on the screen
+
+# Optionally, implement function to clear the chat history:
+def clear_chat():
+    st.session_state.messages = [{"role": "assistant", "content": "Say something to get started!"}]
+    if len(st.session_state.messages) > 1:
+        st.button('Clear Chat', on_click=clear_chat)
