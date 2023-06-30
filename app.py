@@ -3,12 +3,11 @@ from streamlit_chat import message
 import google.generativeai as palm
 
 # add a title to the app
-st.title("McBills")
+st.title("Doreen Ninsima")
 
 '''
-Initial message
-
-Initialize message
+She knows math and can answer pretty well on all kinds of questions ranging from the most complex Biological concepts to explaining a matter to a 5-year old. Please enjoy a conversation with her.
+Meanwhile, she know python :)
 '''
 if "message" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "Say something to get started!"}]
