@@ -11,7 +11,7 @@ Initial message
 Initialize message
 '''
 if "message" not in st.session_state:
-    st.session_state["message"] = [{"role": "assistant", "content": "Say something to get started!"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "Say something to get started!"}]
 
 
 # Create a form to send instructions to PaLM2 API
@@ -24,7 +24,7 @@ with st.form("chat_input", clear_on_submit=True):
         label_visibility="collapsed",
         )
 
-        b.form_submit_button("send", use_container_width=True)
+    b.form_submit_button("send", use_container_width=True)
 
 # Make user input at the left side of the screen, so it looks like a chat app
 for msg in st.session_state.messages:
