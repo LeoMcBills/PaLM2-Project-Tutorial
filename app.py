@@ -10,7 +10,7 @@ She knows math and can answer pretty well on all kinds of questions ranging from
 Meanwhile, she knows python :)
 '''
 if "message" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "Say something to get started!"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "What qquestion do you have for me to answer?"}]
 
 
 # Create a form to send instructions to PaLM2 API
